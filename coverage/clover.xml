@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1517923625794" clover="3.2.0">
+  <project timestamp="1517923625794" name="All files">
+    <metrics statements="15" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2" elements="21" coveredelements="19" complexity="0" loc="15" ncloc="15" packages="1" files="2" classes="2">
+      <file name="index.ts" path="/Users/netanelbasal/www/ts-safe-access/src/index.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="ts-safe-access.ts" path="/Users/netanelbasal/www/ts-safe-access/src/ts-safe-access.ts">
+        <metrics statements="11" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>
