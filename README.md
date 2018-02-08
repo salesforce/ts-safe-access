@@ -1,6 +1,8 @@
 ### 🍭 It's Like Lodash get with the 💪 of Typescript
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![Build Status](https://semaphoreci.com/api/v1/netanel7799/ts-safe-access/branches/master/badge.svg)](https://semaphoreci.com/netanel7799/ts-safe-access)
+[![License](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)]()
+[![Stars](https://img.shields.io/redmine/plugin/stars/redmine_xlsx_format_issue_exporter.svg?style=flat-square)]()
 
 #### 
 
