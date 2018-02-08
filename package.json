@@ -1,6 +1,6 @@
 {
   "name": "@datorama/ts-safe-access",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "description": "🍭 It's Like Lodash get with the 💪 of Typescript",
   "license": "MIT",
