@@ -1,6 +1,6 @@
 {
   "name": "@datorama/ts-safe-access",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "description": "🍭 It's Like Lodash get with the 💪 of Typescript",
   "license": "MIT",
@@ -9,6 +9,8 @@
     "build": "rm -rf ./dist && tsc",
     "prepublish": "rm -rf ./dist && npm run build"
   },
+  "homepage": "https://github.com/datorama/ts-safe-access",
+  "bugs": "https://github.com/datorama/ts-safe-access/issues",
   "jest": {
     "coverageReporters": [
       "json-summary"
@@ -32,7 +34,10 @@
   "maintainers": [
     "Netanel Basal"
   ],
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datorama/ts-safe-access"
+  },
   "devDependencies": {
     "@types/jest": "^21.1.4",
     "jest": "^21.2.1",
