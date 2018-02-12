@@ -19,7 +19,6 @@
 const data = {its: {really: {really: {really: {nested : undefined}}}}, nested: {value: null}};
 const result = get(data, data => data.its.really.really.really.nested, 'defaultValue');
 ```
-- When `excludeNull` is set to true, if the resolved value is `null` or `unde 
 
 - `has(object, getFn)` - Checks if path is a direct property of object.
 
