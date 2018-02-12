@@ -12,7 +12,13 @@
 ## Usage
 
 - `get(object, getFn[, defaultValue, excludeNull = false])` - Gets the value at path of object. If the resolved value is `undefined`, the defaultValue is returned in its place.  
-- When `excludeNull` is set to true, if the resolved value is `null`, the defaultValue is returned in its place.
+
+#### Options
+
+| Option               | Description                                                                      | Default Value     |
+| -------------------- | ------------------------------------------------------------------               | ----------------  |
+| `defaultValue`       |  If the resolved value is `undefined`, the defaultValue is returned in its place.| `undefined`
+| `excludeNull`        | if the resolved value is `null`, the defaultValue is returned in its place.      |  `false`
 
 
 ```js
