@@ -11,10 +11,12 @@
 
 ## Usage
 
-- `get(object, getFn[, defaultValue])` - Gets the value at path of object. If the resolved value is `undefined`, the defaultValue is returned in its place.
+- `get(object, getFn[, defaultValue, excludeNull = false])` - Gets the value at path of object. If the resolved value is `undefined`, the defaultValue is returned in its place.  
+- When `excludeNull` is set to true, if the resolved value is `null`, the defaultValue is returned in its place.
+
 
 ```js
-const data = {its: {really: {really: {really: {nested : undefined}}}}, b: {}};
+const data = {its: {really: {really: {really: {nested : undefined}}}}, nested: {value: null}};
 const result = get(data, data => data.its.really.really.really.nested, 'defaultValue');
 ```
 
