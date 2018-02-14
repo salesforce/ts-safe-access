@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)]()
 [![Stars](https://img.shields.io/redmine/plugin/stars/redmine_xlsx_format_issue_exporter.svg?style=flat-square)]()
 
-#### 
+![Demo](http://preview.ibb.co/mG6kFn/safe_acess.gif)
 
 ## Installation
 `npm install @datorama/ts-safe-access --save`
