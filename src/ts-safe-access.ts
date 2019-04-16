@@ -1,14 +1,19 @@
 /**
+ * Gets the value at path of object. If the resolved value is undefined, the defaultValue is returned in its place.
  *
- * @param {T} obj
- * @param {(obj: T) => R} fn
- * @param {R} defaultValue
- * @param {boolean} excludeNull
- * @returns {R}
+ * @example
+ * const data = {its: {really: {really: {really: {nested : undefined}}}}, nested: {value: null}};
+ * const result = get(data, data => data.its.really.really.really.nested, 'defaultValue');
+ *
+ * @param {ObjectType} object Source Object
+ * @param {(object: ObjectType) => ReturnType} getFn Function to get the value at path of object
+ * @param {ReturnType} defaultValue If the resolved value is undefined, the defaultValue is returned in its place
+ * @param {boolean} excludeNull If the resolved value is null, the defaultValue is returned in its place
+ * @returns {ReturnType}
  */
-export function get<T, R>(obj: T, fn: (obj: T) => R, defaultValue?: R, excludeNull = false) {
+export function get<ObjectType, ReturnType>(object: ObjectType, getFn: (object: ObjectType) => ReturnType, defaultValue?: ReturnType, excludeNull = false): ReturnType {
     try {
-        let result = fn(obj);
+        let result = getFn(object);
         result = excludeNull ? (result === null ? defaultValue : result) : result;
         return result === undefined ? defaultValue : result;
     } catch (err) {
@@ -18,14 +23,20 @@ export function get<T, R>(obj: T, fn: (obj: T) => R, defaultValue?: R, excludeNu
 
 
 /**
+ * Checks if path is a direct property of object
  *
- * @param {T} obj
- * @param {(o: T) => R} getFn
- * @returns {any}
+ * @example
+ * const data = {its: {really: {really: {}}, b: {}};
+ * const result = has(data, data => data.its.really.really.really.nested);
+ * expect(result).toEqual(false);
+ *
+ * @param {ObjectType} object Source Object
+ * @param {(o: ObjectType) => ReturnType} getFn Function to get the value at path of object
+ * @returns {boolean}
  */
-export function has<T, R>(obj: T, getFn: (o: T) => R) {
+export function has<ObjectType, ReturnType>(object: ObjectType, getFn: (o: ObjectType) => ReturnType): boolean {
     try {
-        let result = getFn(obj);
+        let result = getFn(object);
         return result !== undefined;
     } catch (err) {
         return false;
